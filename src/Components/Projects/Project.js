@@ -40,7 +40,17 @@ const Project = () => {
             {data.map((project) => {
               return (
                 <div className='portfolio-item padd-15' data-aos={"zoom-in"}>
-                  <Card sx={{ maxWidth: 280 }}>
+                  <Card sx={{ maxWidth: 280 }}
+                    style={{
+                      backgroundColor: "var(--black)",
+                      color: "var(--white)",
+                      lineHeight: "1.5",
+                      fontSize: "16px",
+                      fontFamily: "'Rubik', sans-serif",
+                      cursor: "pointer",
+                      border: " 2px solid var(--borderwhite)",
+                    }}
+                  >
                     <CardMedia
                       component="img"
                       height="140"
@@ -48,10 +58,23 @@ const Project = () => {
                       alt={project.title}
                     />
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography gutterBottom variant="h5" component="div"
+                        style={{
+                          fontWeight: "600",
+                          marginBottom: "20px",
+                        }}>
                         {project.title}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body2" color="text.secondary"
+                        style={{
+                          color: "var(--white)",
+                          lineHeight: "1.5",
+                          letterSpacing: "0px",
+                          fontSize: "15px",
+                          fontWeight: "500",
+                          fontFamily: "'Rubik', sans-serif",
+                        }}
+                      >
                         {project.text}
                       </Typography>
                     </CardContent>
@@ -69,8 +92,8 @@ const Project = () => {
             })}
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   )
 }
 
