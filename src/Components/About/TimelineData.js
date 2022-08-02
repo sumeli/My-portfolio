@@ -3,7 +3,7 @@ export const TimelineData = [
         id: 1,
         date: "2020 - 2024",
         title: "B.Tech in Computer Science",
-        text: "I am currently pursuing B.Tec in Computer Science in Engineering with specialisation in Artificial Intelligence and Machine Learning from University of Engineering and Management, Kolkata. I am currently in 3rd year. "
+        text: "I am currently pursuing B.Tech in Computer Science and Engineering with specialisation in Artificial Intelligence and Machine Learning from University of Engineering and Management, Kolkata. I am currently in 3rd year. "
     },
 
     {
