@@ -1,0 +1,158 @@
+.sidebar, .sidebar-mobile {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 30px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    z-index: 10;
+    border-right: 1px solid var(--borderwhite);
+}
+
+.sidebar ul, .sidebar-mobile ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar .logo, .sidebar-mobile .logo {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.sidebar .logo a, .sidebar-mobile .logo a {
+    color: var(--white);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+    text-decoration: none;
+}
+
+.sidebar .logo a span, .sidebar-mobile .logo a span {
+    font-family: 'Clicker Script', cursive;
+}
+
+.sidebar .logo a::before,
+.sidebar-mobile .logo a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--theme-color);
+    border-left: 5px solid var(--theme-color);
+    bottom: 0;
+    left: 0;
+}
+
+.sidebar .logo a::after,
+.sidebar-mobile .logo a::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--theme-color);
+    border-right: 5px solid var(--theme-color);
+    top: 0;
+    right: 0;
+}
+
+.sidebar .nav-toggler,
+.sidebar-mobile .nav-toggler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--borderwhite);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background-color: var(--black);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .nav-toggler span,
+.sidebar-mobile .nav-toggler span {
+    height: 2px;
+    width: 18px;
+    background: var(--theme-color);
+    display: inline-block;
+    position: relative;
+}
+
+.sidebar .nav-toggler span::before,
+.sidebar-mobile .nav-toggler span::before {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background-color: var(--theme-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.sidebar .nav-toggler span::after,
+.sidebar-mobile .nav-toggler span::after {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background-color: var(--theme-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.sidebar .nav ul,
+.sidebar-mobile .nav ul {
+    margin-top: 50px;
+}
+
+.sidebar .nav ul a,
+.sidebar-mobile .nav ul a {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.sidebar .nav ul a,
+.sidebar-mobile .nav ul a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--borderwhite);
+    color: var(--white);
+    padding: 5px 15px;
+}
+
+.sidebar .nav ul a.active,
+.sidebar-mobile .nav ul a.active {
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+.sidebar .nav ul svg,
+.sidebar-mobile .nav ul svg {
+    margin-right: 15px;
+    margin-bottom: -1px;
+}
+
+@media (max-width: 1199px) {
+    .sidebar .nav-toggler, .sidebar-mobile .nav-toggler{
+        display: block;
+        border: none;
+        left: 0;
+    }
+
+    .nav-toggler svg {
+        margin-left: 20px;
+        font-size: 24px;
+        color: var(--theme-color);
+        font-weight: 700;
+    }
+}

@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.section {
+  background-color: var(--bgcolor);
   min-height: 100vh;
+  display: block;
+  padding: 0 30px;
+  opacity: 1;
+}
+
+.main-content {
+  padding-left: 270px;
+}
+
+.padd-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.home {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 35px;
+  color: var(--white);
+  background: var(--theme-color);
+  border-radius: 40px;
+  border: none;
+  display: inline-block;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1199px) {
+  .sidebar {
+    left: -270px;
+    transition: 0.3s;
   }
-  to {
-    transform: rotate(360deg);
+
+  .sidebar-mobile {
+    left: 0px;
+    width: 100%;
+    transition: 0.3s;
+
+  }
+
+  .main-content {
+    padding-left: 0px;
+  }
+
+  .about .about-content .personal-info .info-items p span {
+    display: block;
+    margin-left: 0;
+  }
+
+  .sidebar .nav-toggler {
+    display: flex;
+    left: 3%;
+  }
+
+  .section-title {
+    margin-top: 5%;
+  }
+
+  /* .nav-toggler--checked .nav-toggler-check {
+    opacity: 1;
+  }
+
+  .nav-toggler--checked .nav-toggler-uncheck {
+    opacity: 0;
+  }
+
+  .nav-toggler--checked .nav-toggler-circle {
+    left: 27px;
+  } */
+
+  .section {
+    left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+
+  /* .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  } */
+
+  /* .home .home-img {
+    display: none;
+  } */
+
+  .home h3.hello {
+    font-size: 23px;
+  }
+
+  .home h3.hello span {
+    font-size: 30px;
+  }
+
+  .home h3.my-profession {
+    font-size: 20px;
+  }
+
+  .home .home-info p {
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .home .home-img::before,
+  .home .home-img::after {
+    display: none;
+  }
+
+  .about .personal-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about .skills {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .about .about-content .timeline {
+    padding: 20px 15px;
+  }
+
+  .skills .skill-item-inner .skill-icon svg {
+    font-size: 60px !important;
+  }
+
+  .skills .skill-item-inner h4 {
+    font-size: 15px !important;
+  }
+
+  .skills .sub-heading h2 {
+    font-size: 25px !important;
+  }
+
+  .skills .sub-heading h2 span {
+    font-size: 40px !important;
+  }
+
+  .projects .portfolio-item {
+    width: 50%;
+  }
+
+  .contact-form:before {
+    left: 50% !important;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .home h3.hello {
+    font-size: 26px;
+  }
+
+  .home h3.hello span {
+    font-size: 32px;
+  }
+
+  .home h3.my-profession {
+    font-size: 25px;
+  }
+
+  .home .home-info p {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+
+  .section-title {
+    margin-top: 15%;
+  }
+
+  .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 10%;
+  }
+
+  .home .home-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 10%;
+  }
+
+  .home .home-img .img {
+    width: 100%;
+  }
+
+  .about .education, .about .experience {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0px 0px;
+  }
+
+  .skills .skill-item {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .portfolio-heading h2 {
+    font-size: 25px !important;
+  }
+
+  .portfolio-heading h2 span {
+    font-size: 35px !important;
+  }
+
+  .projects .portfolio-item{
+    width: 100%;
   }
 }

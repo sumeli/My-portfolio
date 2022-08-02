@@ -1,0 +1,83 @@
+.projects .container {
+    padding-top: 20px;
+    color: var(--white);
+}
+
+.projects .portfolio-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.portfolio-heading h2 {
+    font-size: 30px;
+}
+
+.portfolio-heading h2 span {
+    color: var(--theme-color);
+    font-family: 'Clicker Script', cursive;
+    font-size: 45px;
+}
+
+.projects .portfolio-item {
+    margin-bottom: 50px;
+}
+
+.projects .css-anke5u-MuiPaper-root-MuiCard-root {
+    background-color: var(--black);
+    color: var(--white);
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid var(--borderwhite);
+}
+
+.projects .css-anke5u-MuiPaper-root-MuiCard-root:hover {
+    transform: scale(1.05);
+    border: 2px solid rgb(187, 185, 185);
+}
+
+.projects .css-h93ljk-MuiTypography-root {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.projects .css-r40f8v-MuiTypography-root {
+    color: var(--white);
+    line-height: 1.5;
+    letter-spacing: 0px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+.projects .css-1t6e9jv-MuiCardActions-root{
+    padding: 15px;
+}
+
+.projects .css-1knaqv7-MuiButtonBase-root-MuiButton-root{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    color: var(--white);
+    background: var(--theme-color);
+    border-radius: 30px;
+    border: none;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.projects .css-1knaqv7-MuiButtonBase-root-MuiButton-root:hover {
+  transform: scale(1.05);
+  background-color: var(--theme-color);
+}
+
+.projects .portfolio-item a {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 12px;
+}
