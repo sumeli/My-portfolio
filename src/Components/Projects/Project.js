@@ -55,7 +55,12 @@ const Project = () => {
                         {project.text}
                       </Typography>
                     </CardContent>
-                    <CardActions>
+                    <CardActions className='btn' style={{
+                      width: "fit-content",
+                      height: "45px",
+                      marginBottom: "10px",
+                      marginLeft: "13px"
+                    }}>
                       <Button size="small"><a href={project.view} target='_blank'> View Project</a></Button>
                     </CardActions>
                   </Card>
